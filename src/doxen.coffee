@@ -91,7 +91,7 @@ module.exports = (robot) ->
     console.log("doxen bomb")
     limit = parseInt(res.match[0]) || 3
     console.log(limit + " doxens requested")
-    for (i = 0; i < limit; i++)
+    for i in [0..limit]
       console.log(i + " - iteration")
       res.send randomPicture()
 
