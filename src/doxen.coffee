@@ -88,5 +88,9 @@ module.exports = (robot) ->
   robot.respond /doxen bomb (\d)/, id: 'doxen.bomb', (res) ->
     res.reply "Dachshund bomb incoming!"
     limit = parseInt(res.match[0]) || 3
-    for i in limit
+    for i in [1..limit]
       res.send randomPicture()
+
+  robot.respond /d[^\s]{4} me/, res ->
+    res.reply "...you're not really one for spelling, are you?"
+    res.send randomPicture()
