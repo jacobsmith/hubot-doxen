@@ -1,7 +1,7 @@
 {
   "name": "hubot-doxen",
   "description": "A hubot script that returns doxens (dachshunds).",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Jacob Smith <jacob.wesley.smith@gmail.com>",
   "license": "MIT",
   "keywords": "lists, tracking",
