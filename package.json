@@ -1,16 +1,16 @@
 {
-  "name": "hubot-lists",
-  "description": "A hubot script that allows tracking various items in different lists.",
-  "version": "0.2.0",
+  "name": "hubot-doxen",
+  "description": "A hubot script that returns doxens (dachshunds).",
+  "version": "0.0.1",
   "author": "Jacob Smith <jacob.wesley.smith@gmail.com>",
   "license": "MIT",
   "keywords": "lists, tracking",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-lists.git"
+    "url": "git://github.com/jacobsmith/hubot-doxen.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-lists/issues"
+    "url": "https://github.com/jacobsmith/hubot-doxen/issues"
   },
   "dependencies": {
     "lodash": "^4.0.0"
