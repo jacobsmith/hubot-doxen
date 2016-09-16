@@ -82,15 +82,20 @@ module.exports = (robot) ->
       ])
 
   robot.respond /doxen me/i, id: 'doxen.single', (res) ->
+    console.log("returning a doxen")
     res.reply "Dachshund incoming!"
     res.send randomPicture()
 
   robot.respond /doxen bomb( \d)?/i, id: 'doxen.bomb', (res) ->
     res.reply "Dachshund bomb incoming!"
+    console.log("doxen bomb")
     limit = parseInt(res.match[0]) || 3
-    for i in [1..limit]
+    console.log(limit + " doxens requested")
+    for (i = 0; i < limit; i++)
+      console.log(i + " - iteration")
       res.send randomPicture()
 
   robot.respond /d[^\s]{4}(.+) me/i, res ->
+    console.log("not one for spelling doxen")
     res.reply "...you're not really one for spelling, are you?"
     res.send randomPicture()
